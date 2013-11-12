@@ -39,7 +39,7 @@ though not everything created in the constructor is required. See
 Engine.__init__(), Engine.run(), and examples/00_minimum.py for helpful clues.
 """
 
-
+import os
 import sys
 
 import pygame
@@ -71,9 +71,8 @@ PYMUNK_WORLD = 2
 
 MOVESPEED = 5
 
-player = pygame.Rect(0, 0, 80, 80)
-playerImage = pygame.image.load('..', '..', 'data', 'image', 'Creatures', 'man.png')
-playerStretchedImage = pygame.transform.scale(playerImage, (80, 80))
+player = pygame.Rect(640, 480, 47, 51)
+playerImage = pygame.image.load(os.path.join('.', 'data', 'image', 'Creatures', 'man.png'))
 
 
 
