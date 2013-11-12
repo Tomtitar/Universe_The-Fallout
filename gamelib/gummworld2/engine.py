@@ -72,7 +72,7 @@ PYMUNK_WORLD = 2
 MOVESPEED = 5
 
 player = pygame.Rect(0, 0, 80, 80)
-playerImage = pygame.image.load('man.png')
+playerImage = pygame.image.load('..', '..', 'data', 'image', 'Creatures', 'man.png')
 playerStretchedImage = pygame.transform.scale(playerImage, (80, 80))
 
 
