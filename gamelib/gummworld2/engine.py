@@ -416,16 +416,6 @@ class Engine(Context):
                 self.on_mouse_button_up(e.pos, e.button)
             elif typ == MOUSEBUTTONDOWN:
                 self.on_mouse_button_down(e.pos, e.button)
-            elif typ == JOYAXISMOTION:
-                self.on_joy_axis_motion(e.joy, e.axis, e.value)
-            elif typ == JOYBALLMOTION:
-                self.on_joy_ball_motion(e.joy, e.ball, e.rel)
-            elif typ == JOYHATMOTION:
-                self.on_joy_hat_motion(e.joy, e.hat, e.value)
-            elif typ == JOYBUTTONUP:
-                self.on_joy_button_up(e.joy, e.button)
-            elif typ == JOYBUTTONDOWN:
-                self.on_joy_button_down(e.joy, e.button)
             elif typ == VIDEORESIZE:
                 self.on_video_resize(e.size, e.w, e.h)
             elif typ == VIDEOEXPOSE:
